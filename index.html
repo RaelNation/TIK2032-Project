@@ -5,64 +5,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rael Nation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>RAEL NATION</h1>
+                    <h6>Nation of Rangian Elroi Johanes</h6>
+                </div>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-    <header style=" background-color: black;">
-        <font face="verdana" color="white">
-            <h1 align="Center"><br>RAEL NATION</h1>
-            <h6 align="Center">Nation of Rangian Elroi Johanes</h6>
-        </font>
-
-        <font face="verdana">
-            <p style="color: aliceblue;" align = "center">
-            <a href="index.html" 
-            style="color: yellow; text-decoration: none; cursor: pointer; margin-right: 200px;"><b>Home</b></a>
-
-            <a href="gallery.html"
-            style="color: yellow; text-decoration: none; cursor: pointer; margin-right: 200px" ><b>Gallery</b></a>
-
-            <a href="blog.html"
-            style="color: yellow; text-decoration: none; cursor: pointer; margin-right: 200px"><b>Blog</b></a>
-
-            <a href="contact.html"
-            style="color: yellow; text-decoration: none; cursor: pointer; "><b>Contact</b></a>
-            <br>
-            <br>
-        </p>
-        </font>
-    </header>
-
-    <div style="text-align:center; padding: 0 20%; font-family: Verdana; background-color:#080038; color: white;">
-        <p style="text-align: justify">
-            <br>
-            <br>
-            <img src="img/Me - 1.jpg" alt="Foto" title="It's Me" height = 200px align="right" style="margin-left: 20px; border-radius: 10%;">
-            <b style="font-size:xx-large; color:gold">Hello World!</b>
-            <br>
-            Selamat datang di dunia <b style="color:aquamarine">Rangian Elroi Johanes</b>. Senang bisa berjumpa dengan anda. Tidak usah berlama-lama, selamat bersafari di dunia saya ini..
-        </p>
-        <p style="text-align: justify;"><b style="color: gold;"> <br>About ME</b>
-            <br>
-            Nama saya adalah Rangian Elroi Johanes biasa dipanggil El. Pada saat ini, saya sedang menjalani pendidikan di Program Studi Teknik Informatika Universitas Sam Ratulangi. Sembari menjalani studi ini, saya juga dipercayakan sebagai anggota Badan Pengurus PENDANAAN UPK Kr. FT UNSRAT. Saya adalah seorang yang gemar dengan teknologi, sejarah dan hal-hal yang berkaitan dengan luar angkasa yang luas dan misterius ini.
-        </p>
-        <br>
-        <br>
-    </div>
-    
-    <footer style="background-color: black; font-family: Verdana; color: aliceblue;">
-        <div>
-            <p align = "Center">
-                <br>
-                <br>
-                © 2024 Rangian Elroi Johanes - 220211060111 - Pemrograman Web
-                <br>
-                <br>
-                <br>
-            </p>
+            <div class="header-text">
+                <h1>Hello World!</h1>
+                <p>
+                    Selamat datang di dunia <span>Rangian Elroi Johanes</span>. 
+                    <br>
+                    Senang bisa berjumpa dengan anda.
+                </p>
+            </div>
         </div>
-    </footer>
+    </div>
 
-</body>
+<!-- about -->
+
+    <div id="about">
+        <div class = "container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Elroi Rangian_Anggota.JPG" alt="Foto Saya">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Nama saya adalah Rangian Elroi Johanes biasa dipanggil El. Pada saat ini, saya sedang menjalani pendidikan di Program Studi Teknik Informatika Universitas Sam Ratulangi. Sembari menjalani studi ini, saya juga dipercayakan sebagai anggota Badan Pengurus PENDANAAN UPK Kr. FT UNSRAT. Saya adalah seorang yang gemar dengan teknologi, sejarah dan hal-hal yang berkaitan dengan luar angkasa yang luas dan misterius ini.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>qwerty asdfghjkl zxcvbnm</li>
+                            <li><span>Web Development</span><br>qwerty asdfghjkl zxcvbnm</li>
+                            <li><span>App Development</span><br>qwerty asdfghjkl zxcvbnm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Anggota HME FT. UNSRAT</span><br>qwerty asdfghjkl zxcvbnm</li>
+                            <li><span>Panitia Pelaksana Akomkem BC-37 FT. UNSRAT</span><br>qwerty asdfghjkl zxcvbnm</li>
+                            <li><span>Anggota BP Pendanaan UPK Kr. FT. UNSRAT</span><br>qwerty asdfghjkl zxcvbnm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>SMA Negeri 99 Jakarta</li>
+                            <li><span>2022</span><br>Universitas Sam Ratulangi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Gallery</h1>
+            <div class="gallery-list">
+                <div>
+                    <img src="img/UPK - 1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/Pendanaan.png" alt="">
+                </div>
+                <div>
+                    <img src="img/3598a8fa-d51d-4f16-8f46-e63b944fceb7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/Kota Manado.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/Awan Sunset Manado.jpg" alt="">
+                </div>  
+                <div>
+                    <img src="img/WhatsApp Image 2024-04-02 at 23.00.52_d5292568.jpg" alt="">
+                </div>                    
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- My Blog -->
+    <div id="blog">
+        <div class="container">
+            <h1 class="sub-title">My Blog</h1>
+            <div class="blog-list">
+                <div class="blog">
+                    <img src="img/war-conflict-landscape-with-tank-low-angle.jpg" alt="">
+                    <div class="layer">
+                        <h3>History</h3>
+                        <p>Blog saya mengenai sejarah.</p>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="img/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tech</h3>
+                        <p>Blog saya mengenai teknologi.</p>
+                    </div>
+                    
+                </div>
+                <div class="blog">
+                    <img src="img/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai.jpg" alt="">
+                    <div class="layer">
+                        <h3>Space</h3>
+                        <p>Blog saya mengenai luar angkasa.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>elroijohanes@gmail.com</p>
+                    <p>087888859877</p>
+                    <div class="socialicons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+</body>  
 </html>
